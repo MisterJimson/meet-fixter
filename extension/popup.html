@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Meet Fixter</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+<header><span class="mark" aria-hidden="true">mf</span><div><h1>Meet Fixter</h1><span class="subtitle">Keep the window. Lose the chime.</span></div></header>
+<main>
+<p id="status" class="status" role="status">Loading…</p>
+<p>Picture-in-picture stays on. Meeting voices and join sounds stay on.</p>
+<details id="setup" open><summary>One-time setup</summary><ol><li>After installing, reload Meet before joining a meeting.</li><li>Switch tabs to hear the PiP chime, then open this popup.</li><li>Preview the sounds below. Select <b>Silence</b> only for the PiP chime.</li><li>Reload Meet to replace any audio it already loaded.</li></ol></details>
+<div class="list-heading"><h2>Sounds loaded by Meet</h2><button id="refresh" type="button">Refresh</button></div>
+<p class="hint">These are loaded files, not a playback log. Meet can preload sounds before using them.</p>
+<div id="sounds"></div>
+<p id="feedback" role="status"></p>
+<footer>Local only · No recording · No account needed</footer>
+</main><script type="module" src="popup.js"></script>
+</body></html>

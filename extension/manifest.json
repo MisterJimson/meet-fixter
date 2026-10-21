@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Meet Fixter — Quiet Picture-in-Picture",
+  "version": "0.1.0",
+  "description": "Choose Meet's picture-in-picture chime to silence while keeping picture-in-picture and other meeting audio.",
+  "minimum_chrome_version": "111",
+  "permissions": ["declarativeNetRequestWithHostAccess", "webRequest", "storage"],
+  "host_permissions": ["https://meet.google.com/*", "https://www.gstatic.com/meet/sounds/*"],
+  "background": {"service_worker": "background.js", "type": "module"},
+  "action": {"default_popup": "popup.html", "default_title": "Meet Fixter"},
+  "web_accessible_resources": [{"resources": ["silence.wav"], "matches": ["https://meet.google.com/*"]}]
+}
